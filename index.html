@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Alejandro's Password Saver</title>
+  <style>
+
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a; /* Dark background color */
+      color: #fff; /* Light text color */
+    }
+
+    /* Style the lock icon */
+.fa-lock {
+  margin-right: 10px; /* Add some spacing between the icon and the title */
+}
+
+    .container {
+      
+      max-width: 400px;
+      margin: 0 auto;
+      margin: 50px auto 0; /* Added margin-top: 50px */
+      padding: 40px;
+      background-color: #333; /* Dark container background color */
+      border-radius: 5px;
+    }
+    
+    h2 {
+      text-align: center; /* Center alignment for the title */
+      margin-top: -10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #fff; /* Light label text color */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #555; /* Dark input field background color */
+      color: #fff; /* Light input text color */
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    #passwords-container {
+      margin-top: 20px;
+      background-color: #444; /* Darker background color for passwords container */
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #passwords-container h3 {
+      margin-top: 0;
+      color: #fff; /* Light text color for passwords heading */
+    }
+
+    #passwords-container ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #passwords-container ul li {
+      margin-bottom: 10px;
+      color: #fff; /* Light text color for password items */
+    }
+
+    .social-media-icons {
+  text-align: center; /* Center the icons horizontally */
+  margin-top: 20px; /* Adjust the margin-top value to move it further down */
+}
+
+.social-media-icons img {
+  width: 30px; /* Adjust the size of the logo as needed */
+  height: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+      <h2><i class="fas fa-lock"></i> Alex's Password Saver</h2>
+      <!-- Rest of the code -->
+    </div>
+    
+    <label for="url">URL:</label>
+    <input type="text" id="url" placeholder="Enter URL">
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter username">
+
+    <label for="password">Password:</label>
+    <label for="show-password">
+      <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()">
+      Show Password
+    </label>
+    
+    <input type="password" id="password" placeholder="Enter password">
+
+    <button onclick="savePassword()">Save Password</button>
+    <button onclick="generatePassword()">Generate Password</button>
+
+
+    <div id="passwords-container">
+      <h3>Saved Passwords</h3>
+      <ul id="passwords-list"></ul>
+    </div>
+  </div>
+
+  <div class="social-media-icons">
+    <a href="https://www.instagram.com/sandovalalejandro67/" target="_blank">
+      <img src="instagram-logo.png" alt="Instagram" />
+    </a>
+  </div>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
